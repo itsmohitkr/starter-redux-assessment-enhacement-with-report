@@ -33,7 +33,7 @@ test('removes a dog from the list of dogs after clicking the Delete button', asy
   expect(screen.queryByText(/basenji/i)).not.toBeInTheDocument();
 });
 
-test('Task 15 & 20 & 22: toggles a photo as favorite when the favorite button is clicked', async () => {
+test('Task 22 & 27 & 29: toggles a photo as favorite when the favorite button is clicked', async () => {
   render(<App />);
 
   // Find the first dog photo (Bullterrier Staffordshire - id: 1)
@@ -56,7 +56,7 @@ test('Task 15 & 20 & 22: toggles a photo as favorite when the favorite button is
   expect(favoriteButton).toBeInTheDocument();
 });
 
-test('Task 16 & 21 & 23: edits a photo caption when the edit button is clicked', async () => {
+test('Task 23 & 28 & 30: edits a photo caption when the edit button is clicked', async () => {
   // Mock window.prompt to return a new caption
   global.prompt = jest.fn(() => 'Updated Bullterrier Caption');
   
